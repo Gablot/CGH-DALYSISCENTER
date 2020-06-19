@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+
+<body>
+	</br></br></br></br></br></br></br>
+<link rel="stylesheet" href="{% static 'Website/dentist/SCHEDULE/styleSCHEDULE.css' %}">
+<!-- partial:index.partial.html -->
+<h1><span class="blue">&lt;</span>Hemodialysis<span class="blue">&gt;</span> 
+	<span class="yellow">Schedule</pan></h1>
+
+<table class="containerSCHED" >
+	<thead >
+		<tr>
+			<th><h1></h1></th>
+			<th><h1>Monday</h1></th>
+			<th><h1>Tuesday</h1></th>
+			<th><h1>Wednesday</h1></th>
+			<th><h1>Thursday</h1></th>
+			<th><h1>Friday</h1></th>
+			<th><h1>Saturday</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			  <h3>06:00 am</br>to</br>11:00 am</h3>
+			</td>
+ 
+			<!-- MONDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 1 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+			
+			<!-- TUESDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 2 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+
+			<!-- WEDNESDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 3 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}	
+			</td>
+
+
+			<!-- THURSDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 4 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- FRIDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 5 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- SATURDAY 06-11 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 6 %}
+			{% if name.session == 1 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+		</tr>
+
+		<tr>
+			<td>
+			  <h3>04:00 pm</br>to</br>09:00 pm</h3>
+			</td>
+ 
+			<!-- MONDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 1 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+			
+			<!-- TUESDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 2 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+
+			<!-- WEDNESDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 3 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}	
+			</td>
+
+
+			<!-- THURSDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 4 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- FRIDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 5 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- SATURDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 6 %}
+			{% if name.session == 2 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			  <h3>09:00 pm</br>to</br>02:00 am</h3>
+			</td>
+ 
+			<!-- MONDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 1 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+			
+			<!-- TUESDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 2 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+
+			<!-- WEDNESDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 3 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}	
+			</td>
+
+
+			<!-- THURSDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 4 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- FRIDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 5 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+
+			<!-- SATURDAY 11-04 -->
+			<td>
+			{% for name in PatientList %}
+			{% if name.DayOfTheWeek == 6 %}
+			{% if name.session == 3 %}
+			<li>{{name.name}} </li>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+			</td>
+		</tr>
+
+
+	</tbody>
+</table>
+<!-- partial -->
+  
+</body>
+</html>
+{% endblock %}
