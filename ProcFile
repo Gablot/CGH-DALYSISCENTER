@@ -1,1 +1,1 @@
-web gunicorn DIALYSIS.wsgi
+web : gunicorn DIALYSIS.wsgi
