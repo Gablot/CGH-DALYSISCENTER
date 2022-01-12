@@ -18,7 +18,7 @@ node==0.9.25
 npm==0.1.1
 odict==1.7.0
 optional-django==0.1.0
-pipenv==2020.6.2
+pipenv==2022.1.8
 plumber==1.6
 psycopg2==2.8.5
 python-dateutil==2.8.1
